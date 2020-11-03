@@ -1,0 +1,9 @@
+\frametitle{SLIDE TITLE}
+\begin{center}
+    \begin{itemize}
+      \textbf{WPX - WORK PACKAGE TITLE}\item %ugly hacks...
+      \item ITEM 1
+      SOME LINK
+      \item ITEM 2
+    \end{itemize}
+  \end{center}

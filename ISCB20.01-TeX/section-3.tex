@@ -4,16 +4,163 @@
 
 \maketitle
 % Sectuion Title 
-\section{Section--III: Basic Genomic Data Manipulation using LINUX	}
-% Slide 
-\begin{frame}[t]{SLIDE TITLE}
-    \begin{itemize}
- 
-      \item ITEM 1
-      SOME LINK
-      \item ITEM 2
-    \end{itemize}
+\section{Section--3: UNIX Commands for Data Manipulation}
 
+% Slide-1
+\begin{frame}[t]{Content Representation--1}
+	\textbf{Files, Directories, Directory Structure, Paths}
+	\begin{itemize}
+		\item / $\rightarrow$ Root 
+		\item cd $\rightarrow$ Change directory
+		\item  cd ..   $\rightarrow$ Moves one directory up
+		\item pwd  $\rightarrow$ Present working directory
+		\item ls  $\rightarrow$ List of content of resent working directory
+		\item ls-l  $\rightarrow$ Similar as ls, but provides additional info 
+		on files and 
+		directories
+		\item ls -la  $\rightarrow$ Includes hidden files (.name) as well
+	\end{itemize}
+\end{frame}
+
+% Slide-1.1
+\begin{frame}[t]{Content Representation--2}
+	\textbf{Regular Expressions(File Naming Patterns)}
+	\begin{itemize}
+		\item * $\rightarrow$ means all 
+		\item ? $\rightarrow$ finding pattern
+		\item \ [] $\rightarrow$ finding pattern
+		\item \{\}  $\rightarrow$ finding pattern
+	\end{itemize}
+\end{frame}
+
+
+% Slide-2
+\begin{frame}[t]{Content Creation and Removal--1}
+	\textbf{Files}
+	\begin{itemize}
+		\item touch [filename.extention(.txt,.csv, .tsv etc)] $\rightarrow$ 
+		create file 
+		\item nano [filename.extension] $\rightarrow$ edit file with nano text 
+		editor
+		\item cp [path] $\rightarrow$ copy files/directories	
+		\item mv [path] $\rightarrow$ move files/directories	
+		\item rm [filename.extension] $\rightarrow$ remove file(s)	
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Content Creation and Removal--2}
+	\textbf{Directories}
+	\begin{itemize}
+		\item mkdir [dirname] $\rightarrow$ make directory	
+		\item cp [path] $\rightarrow$ copy files/directories	
+		\item mv [path] $\rightarrow$ move files/directories	
+		\item rmdir [dirname] $\rightarrow$ remove empty directory
+		\item rm -r [dirname] $\rightarrow$ remove directory with content
+		\item rm -rf [dirname] $\rightarrow$ remove directory with content
+	\end{itemize}
+\end{frame}
+
+
+% Slide-3
+%\begin{frame}[t]{File Naming}
+%\end{frame}
+
+% Slide-4
+%\begin{frame}[t]{Content Creation}
+%\end{frame}
+
+% Slide-5
+\begin{frame}[t]{Accessing Content--1}
+	\begin{itemize}
+		\item echo text $\rightarrow$ print text/string
+		\item cat [filename]  $\rightarrow$ concatenate file/print content
+		\item head [filename] $\rightarrow$ default displays the first 10 lines
+		\item head -n [filename] $\rightarrow$ displays the firth nth number of 
+		lines
+		\item tail [filename] $\rightarrow$ default displays the last 10 
+		lines	
+		\item tail -n [filename] $\rightarrow$ displays the last nth number of  
+		lines	
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Accessing Content--2}
+	\begin{itemize}		
+		\item more [filename] $\rightarrow$ Viewing content
+		\item less [filename] $\rightarrow$ Scroll through a file using arrow 
+		keys or(spacebar = advance page | b = reverse page | q = quit
+		)
+	\end{itemize}
+\end{frame}
+
+% Slide-6
+\begin{frame}[t]{Redirecting Content}
+\textbf{Standard Files}	
+	\begin{itemize}
+		\item $<$  $\rightarrow$ standard input(stdin)
+		\item $>$ $\rightarrow$ standard output(stdout)
+		\item Pipe(|) $\rightarrow$  pipe is a form of redirection (transfer of 
+		standard output to some other destination
+	\end{itemize}	 
+\end{frame}
+
+% Slide-7
+\begin{frame}[t]{Querying Content}
+	\begin{itemize}
+		\item grep “pattern” filename $\rightarrow$ search a 
+		pattern		
+		\item sort [file] $\rightarrow$ sort files(alphabetically)
+		\item uniq [file] $\rightarrow$ display unique lines
+		\item cut [file] $\rightarrow$ break files vertically based on fields	
+	\end{itemize}
+\end{frame}
+
+% Slide-8
+\begin{frame}[t]{Comparing Content}
+	\begin{itemize}
+		\item diff $\rightarrow$ display difference	
+		\item comm $\rightarrow$ display common lines among files	
+	\end{itemize}
+\end{frame}
+
+% Slide-9
+\begin{frame}[t]{Archiving Content--1}
+	\textbf{Compress}
+	\begin{itemize}
+		\item zip output.zip inputfile.extension $\rightarrow$ 
+		zip files	
+		\item zip -r outputdir.zip directory $\rightarrow$ 
+		zip directories
+		\item gzip files	$\rightarrow$ gzip files	
+		\item tar	$\rightarrow$ archive and compress files/directories
+		\item tar -czvf output.tar.gz directory	$\rightarrow$ compress
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[t]{Archiving Content--2}
+	\textbf{Decompress}
+	\begin{itemize}
+		\item unzip dirname.zip
+		$\rightarrow$ decompress zipped file	
+		\item gunzip dirname.gz $\rightarrow$ decompress gzipped files		
+		\item tar -xzvf dirname.tar.gz	$\rightarrow$ extract
+	\end{itemize}
+\end{frame}
+
+
+% Slide-10
+\begin{frame}[t]{A Case Study}
+	\begin{itemize}
+		\item How many chromosomes are there in the genome?
+		\item How many genes and transcript variants?
+		\begin{itemize}
+			\item How many genes have a single variant?  
+			\item How many genes have a multiple variant?
+		\end{itemize}
+		\item How many genes are there on each of the '+' and '-' strands?
+		\item How many genes(and transcripts) are there on each chromosome?
+	\end{itemize}
 \end{frame}
 
 
